@@ -4,3 +4,71 @@
 html {
   font-size: 62.5%;
 }
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+/* =============common============== */
+
+.main-content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(100% - 48px);
+}
+a {
+  text-decoration: none;
+}
+
+.button {
+  display: inline-block;
+  min-width: 150px;
+  text-align: center;
+  padding: 0px 16px;
+  line-height: 50px;
+  color: #f3e8de;
+  background-color: #3f2214;
+  border-radius: 25px;
+  font-weight: 600;
+}
+/* ==========header=========== */
+
+.header {
+  background-color: #f3e8de;
+}
+
+.header.fixed {
+  position: sticky;
+  top: 0;
+}
+.header .header-top {
+  display: flex;
+  align-items: center;
+  padding: 10px 0 8px;
+}
+.nav {
+  margin-left: auto;
+}
+.nav ul {
+  display: flex;
+}
+.nav a {
+  /* background-color: #f8c52c; */
+  font-size: 1.6rem;
+  color: #3f2214;
+  padding: 10px 20px;
+}
+.nav a:hover {
+  color: #f8c52c;
+  font-weight: 600;
+}
+
+.header .btn-order-online {
+  min-width: 110px;
+  margin-left: 20px;
+}
