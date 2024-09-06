@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap"
       rel="stylesheet"
     />
 
@@ -19,39 +19,98 @@
     <title>Laboration 2</title>
   </head>
   <body style="height: 50000px">
-    <!-- Header -->
-    <header class="header fixed">
-      <div class="main-content">
-        <div class="header-top">
-          <!-- logo -->
-          <img
-            src="./assets/img/Ca Phe Vietnam Logo.PNG"
-            alt="Ca Phe Vietnam Logo"
-            class="logo"
-          />
-          <!-- nav -->
-          <nav class="nav">
-            <ul>
-              <li>
-                <a href="#!">Hem</a>
-              </li>
-              <li>
-                <a href="#!">Meny</a>
-              </li>
-              <li>
-                <a href="#!">Om Oss</a>
-              </li>
-              <li>
-                <a href="#!">Hitta Oss</a>
-              </li>
-            </ul>
-          </nav>
-          <!-- button action -->
-          <div class="action">
-            <a href="#!" class="button btn-order-online">Beställ här</a>
-          </div>
+    <!-- =====Header===== -->
+    <header>
+      <div class="header-content">
+        <nav class="navbar">
+          <ul>
+            <li><a href="#!">Hem</a></li>
+            <li><a href="#!">Meny</a></li>
+            <li><a href="#!">Om oss</a></li>
+            <li><a href="#!">Hitta oss</a></li>
+          </ul>
+        </nav>
+        <!-- logo -->
+        <img
+          class="logo"
+          src="./assets/img/Ca Phe Vietnam Logo.PNG"
+          alt="Logo restaurang"
+        />
+        <!-- navigation -->
+        <!-- Button -->
+        <div class="button-order">
+          <a href="#!">Beställ här</a>
         </div>
       </div>
     </header>
+    <!-- ======Main====== -->
+    <main>
+      <!-- ====Hero==== -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Välkomna till</h1>
+          <h2>Cà Phê</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Praesentium, ad.
+          </p>
+        </div>
+
+        <div class="hero-button">
+          <div class="button-menu"><a href="#!">Meny</a></div>
+          <div class="button-order-hero"><a href="">Beställ här</a></div>
+        </div>
+      </section>
+      <!-- =============OmOss============-->
+      <section class="about">
+        <div class="about-content">
+          <!-- about left -->
+          <div class="media-block">
+            <img
+              class="img-inside"
+              src="./assets/img/inside restaurant.jpg"
+              alt="Inside restaurat"
+            />
+          </div>
+          <!-- about right -->
+          <div class="content-block">
+            <h1>Om oss</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores eius odio ea eveniet cupiditate, incidunt aperiam
+              perspiciatis accusamus, officia repellat, aliquid a libero
+              perferendis qui veniam non laboriosam neque molestias. Optio
+              sapiente exercitationem ab quia. Itaque perspiciatis, quam ipsa
+              tempore, natus, in illum mollitia quasi magni praesentium quisquam
+              repudiandae soluta accusamus. Assumenda illum, ullam repudiandae
+              facilis dolorem itaque fugiat accusamus?
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- ==============Meny============= -->
+      <section class="menu">
+        <div class="menu-content">
+          <!-- menu content left -->
+          <div class="content-block">
+            <h1>Meny</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="button-menu"><a href="">Vår meny</a></div>
+          </div>
+
+          <!-- menu content right -->
+          <div class="media-block">
+            <div class="bowl-content">
+              <img src="./assets/img/pho.jpg" alt="" class="bowl-img" />
+              <div class="bowl-button"><a href="#!">Bowls</a></div>
+            </div>
+            <div class="sushi-content">
+              <img src="./assets/img/sushi.jpg" alt="" class="sushi-img" />
+              <div class="sushi-button"><a href="#!">Sushi</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
