@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- link to reset.css -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!-- embed font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- link to style.css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Laboration 2</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-box">
+        <div class="header-content">
+          <!-- logo -->
+          <img class="logo" src="./assets/img/Logo.PNG" alt="Logo_restaurang" />
+
+          <!-- name -->
+          <div class="header-name">
+            <p>Cà Phê Vietnam</p>
+          </div>
+
+          <!-- icon -->
+          <input
+            type="checkbox"
+            name="checkbox"
+            id="checkbox"
+            class="checkbox"
+            hidden
+          />
+          <label for="checkbox">
+            <div class="icon-navbar">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </label>
+
+          <!-- overlay -->
+          <label for="checkbox" class="overlay-navbar"></label>
+
+          <!-- navbar -->
+          <div class="menu-drawer">
+            <div class="navbar-content">
+              <!-- navbar content -->
+              <ul class="navbar">
+                <li><a href="/" class="navbar-link">Hem</a></li>
+                <li><a href="#!" class="navbar-link">Meny</a></li>
+                <li><a href="#!" class="navbar-link">Hitta oss</a></li>
+                <li>
+                  <a href="#!" class="navbar-link order-link">Beställ här</a>
+                </li>
+              </ul>
+              <!-- icon close -->
+              <label for="checkbox">
+                <div class="icon-close-nav">
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="header-hero">
+          <div class="hero-content">
+            <div class="container">
+              <h1>Meny</h1>
+              <p>Upplev vårt varierade utbud av vietnamesisk mat och sushi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main-menu">
+        <div class="container">
+          <div class="wrap-container">
+            <div class="wp-block">
+              <div class="wp-block-heading">
+                <h2>BOWLS</h2>
+              </div>
+              <div class="wp-block-content">
+                <h3 class="heading-text"><strong>Phở</strong> -149kr</h3>
+                <p class="desc-text">
+                  Risnudelsoppa med entrecôte, sous vide biff, böngroddar,
+                  salladslök, silverlök, färska asiatiska örter, chili.
+                </p>
+              </div>
+              <div class="wp-block-content">
+                <h3 class="heading-text">
+                  <strong>Spicy Fried Chicken</strong> -149kr
+                </h3>
+                <p class="desc-text">
+                  Sötstark kyckling, picklade grönsaker, toppad med salladslök,
+                  färska asiatiska örter, chilimajo och chili. Serveras med
+                  jasminris.
+                </p>
+              </div>
+              <div class="wp-block-content">
+                <h3 class="heading-text">
+                  <strong>Beef Stir-Fry</strong> -149kr
+                </h3>
+                <p class="desc-text">
+                  Wok med marinerad biff, picklad rödlök, cucumber, koriander,
+                  chili, rostad lök och hemmajord sås. Serveras med jasminris.
+                </p>
+              </div>
+              <div class="wp-block-content">
+                <h3 class="heading-text">
+                  <strong>Aburi Salmon-don</strong> -149kr
+                </h3>
+                <p class="desc-text">
+                  Eldad lax med avokado, ponzu, gurka, rödkål, marinerat
+                  ägggula, ikura, salladslök.
+                </p>
+              </div>
+              <div class="wp-block-content">
+                <h3 class="heading-text">
+                  <strong>Lemongrass Pork Noodles</strong> -159kr
+                </h3>
+                <p class="desc-text">
+                  Citrongräsmarinerat fläsk med grönsaker, färska asiatiska
+                  örter, cashewnötter och fisksås.Serveras med risnudlar.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="wrap-container">
+            <div class="wp-block"></div>
+              <div class="wp-block-heading">
+                <h2>SUSHI</h2>
+              </div>
+              <div class="wp-block-content">
+                <h3 class="heading-text"><strong>Golden Cheese Salmon</strong> -159kr</h3>
+                <p class="desc-text">
+                  Lax, avokado, gurka, färskost, toppad med  ost och nachos.
+                </p>
+              </div>
+              <div class="wp-block-content">
+                <h3 class="heading-text">
+                  <strong>Volcano Tuna</strong> -169kr
+                </h3>
+                <p class="desc-text">
+                  Marinerad stark tonfisktartar, avokado, gurka, krispig sallad, toppad med sesam och teriyakisås.
+                </p>
+              </div>
+              <div class="wp-block-content">
+                <h3 class="heading-text">
+                  <strong>Sweet Ebi Fry</strong> -159kr
+                </h3>
+                <p class="desc-text">
+                  Ebi fry, avokado, gurka, krispig sallad, toppad med sesam och sweet chilimayo.
+                </p>
+              </div>
+              <div class="wp-block-content">
+                <h3 class="heading-text">
+                  <strong>Truffle Unagi</strong> -169kr
+                </h3>
+                <p class="desc-text">
+                  Lax, avokado, gurka, färskost, toppad med unagi, tryffelmajo, puffat ris.
+                </p>
+              </div>
+              <div class="wp-block-content">
+                <h3 class="heading-text">
+                  <strong>Nasu Roll</strong> -149kr
+                </h3>
+                <p class="desc-text">
+                  Marinerad aubergine, tofu, inlagd morot och rädisa, avokado, gurka.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

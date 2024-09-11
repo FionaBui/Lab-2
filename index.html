@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -25,90 +26,104 @@
   <body>
     <!-- =====Header===== -->
     <header>
-      <!-- mobile menu -->
-      <input
-        type="checkbox"
-        name="menu-checkbox"
-        id="menu-checkbox"
-        class="menu-checkbox"
-        hidden
-      />
-      <label for="menu-checkbox">
-        <svg
-          class="icon-menu"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 448 512"
-        >
-          <path
-            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
-          />
-        </svg>
-      </label>
+      <div class="header-box">
+        <div class="header-content">
+          <!-- logo -->
+          <img class="logo" src="./assets/img/Logo.PNG" alt="Logo_restaurang" />
 
-      <!-- overlay -->
-      <label for="menu-checkbox" class="overlay-menu"></label>
-      <div class="header-content">
-        <!-- navbar -->
-        <nav class="navbar">
-          <ul>
-            <li><a href="#!">Hem</a></li>
-            <li><a href="#!">Meny</a></li>
-            <li><a href="#!">Om oss</a></li>
-            <li><a href="#!">Hitta oss</a></li>
-          </ul>
-        </nav>
-        <!-- logo -->
-        <img class="logo" src="./assets/img/Logo.PNG" alt="Logo restaurang" />
-        <!-- navigation -->
-        <!-- Button -->
-        <div class="button-order">
-          <a href="#!">Beställ här</a>
+          <!-- name -->
+          <div class="header-name">
+            <p>Cà Phê Vietnam</p>
+          </div>
+
+          <!-- icon -->
+          <input
+            type="checkbox"
+            name="checkbox"
+            id="checkbox"
+            class="checkbox"
+            hidden
+          />
+          <label for="checkbox">
+            <div class="icon-navbar">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </label>
+
+          <!-- overlay -->
+          <label for="checkbox" class="overlay-navbar"></label>
+
+          <!-- navbar -->
+          <div class="menu-drawer">
+            <div class="navbar-content">
+              <!-- navbar content -->
+              <ul class="navbar">
+                <li><a href="/index.html" class="navbar-link">Hem</a></li>
+                <li><a href="./menu.html" class="navbar-link">Meny</a></li>
+                <li><a href="/#footer" class="navbar-link">Hitta oss</a></li>
+                <li>
+                  <a href="#!" class="navbar-link order-link">Beställ här</a>
+                </li>
+              </ul>
+              <!-- icon close -->
+              <label for="checkbox">
+                <div class="icon-close-nav">
+                  <i class="fa-regular fa-circle-xmark"></i>
+                </div>
+              </label>
+            </div>
+          </div>
         </div>
+
+        <!-- ====Hero==== -->
+        <section class="hero">
+          <div class="hero-box">
+            <div class="container">
+              <h1>Välkomna till</h1>
+              <h2>Cà Phê</h2>
+              <p>
+                Vi erbjuder en unik fusion av vietnamesisk och sushikultur genom
+                vår specialkomponerade meny. Upplev en kulinarisk resa utöver
+                det vanliga! Utforska vårt nyskapande kök med utsökta rätter som
+                förenar klassiska aromer på ett kreativt sätt.
+              </p>
+            </div>
+
+            <div class="hero-button">
+              <a href="#!" class="hero-link">Meny</a>
+              <a href="#!" class="hero-link">Beställ här</a>
+            </div>
+          </div>
+        </section>
       </div>
     </header>
 
     <!-- ======Main====== -->
     <main>
-      <!-- ====Hero==== -->
-      <section class="hero">
-        <div class="container">
-          <h1>Välkomna till</h1>
-          <h2>Cà Phê</h2>
-          <p>
-            där vi kombinerar smaker från vietnamesisk mat och sushi i vår Asian
-            fusion meny. Utforska en unik kulinarisk upplevelse hos oss!
-          </p>
-        </div>
-
-        <div class="hero-button">
-          <div class="button-menu"><a href="#!">Meny</a></div>
-          <div class="button-order-hero"><a href="">Beställ här</a></div>
-        </div>
-      </section>
       <!-- =============About============-->
       <section class="about">
         <div class="container">
           <!-- about left -->
-          <div class="media-about">
-            <img
-              class="img-inside"
-              src="./assets/img/restaurant.jpg"
-              alt="Inside restaurant"
-            />
-          </div>
-          <!-- about right -->
+
           <div class="info-about">
             <h1>Om oss</h1>
+            <h2>Utforska en fusion av smaker på Món!</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores eius odio ea eveniet cupiditate, incidunt aperiam
-              perspiciatis accusamus, officia repellat, aliquid a libero
-              perferendis qui veniam non laboriosam neque molestias. Optio
-              sapiente exercitationem ab quia. Itaque perspiciatis, quam ipsa
-              tempore, natus, in illum mollitia quasi magni praesentium quisquam
-              repudiandae soluta accusamus. Assumenda illum, ullam repudiandae
-              facilis dolorem itaque fugiat accusamus?
+              Välkommen till Cà Phê - din destination för en unik Asian fusion
+              upplevelse. Vi kombinerar den traditionella smaken av vietnamesisk
+              fusion med den delikata konsten att göra sushi och andra asiatiska
+              rätter. Med noggrant utvalda råvaror och kreativa
+              smakkombinationer strävar vi alltid efter att erbjuda våra gäster
+              en minnesvärd och smakfull matupplevelse.
             </p>
+          </div>
+          <!-- about right -->
+          <div class="media-about">
+            <img
+              class="img-about"
+              src="./assets/img/bowl.jpg"
+              alt="Vietnamese_Bowl "
+            />
           </div>
         </div>
       </section>
@@ -118,18 +133,27 @@
           <!-- menu content left -->
           <div class="info-menu">
             <h1>Meny</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <div class="button-menu action-menu"><a href="">Vår meny</a></div>
+            <p>
+              Välkommen till Cà Phê, din destination för en unik asiatisk
+              fusionupplevelse! Utforska vår meny som erbjuder en mix av
+              vietnamesisk mat, sushi, maki-rolls, bowls och den utsökta
+              Phở-soppan. Oavsett om du är sugen på något traditionellt eller
+              vill prova något nytt och spännande, kommer våra olika produkter
+              att tillfredsställa dina smaklökar på Cà Phê. Besök oss idag!
+            </p>
+            <div class="menu-link">
+              <a href="">Vår meny</a>
+            </div>
           </div>
 
           <!-- menu content right -->
           <div class="list-menu">
             <div class="item-container">
-              <img src="./assets/img/pho.jpg" alt="" class="item-img" />
+              <img src="./assets/img/pho.jpg" alt="bowls" class="item-img" />
               <div class="item-button"><a href="#!">Bowls</a></div>
             </div>
             <div class="item-container">
-              <img src="./assets/img/sushi.jpg" alt="" class="item-img" />
+              <img src="./assets/img/sushi.jpg" alt="sushi" class="item-img" />
               <div class="item-button"><a href="#!">Sushi</a></div>
             </div>
           </div>
@@ -137,7 +161,7 @@
       </section>
     </main>
     <!-- =====================footer================== -->
-    <footer class="footer">
+    <footer id="footer" class="footer">
       <section class="contact">
         <div class="container">
           <div class="header-contact">
@@ -147,7 +171,7 @@
               explosion av smaker som kommer att ta dina smaklökar på en
               spännande resa!
             </p>
-            <a href="tel:+46 737 418 580"
+            <a class="phone-number" href="tel:+46 737 418 580"
               ><i class="fa-solid fa-phone"></i>0737418580</a
             >
           </div>

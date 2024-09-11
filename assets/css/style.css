@@ -11,11 +11,6 @@ body {
   padding: 0;
 }
 
-img {
-  width: 20%;
-  height: auto;
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -26,9 +21,7 @@ img {
 
 a {
   text-decoration: none;
-  color: #f3e8de;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 18px;
 }
 
 h1 {
@@ -36,6 +29,7 @@ h1 {
   padding-bottom: 10px;
   line-height: 50px;
   font-style: italic;
+  color: #f8c52c;
 }
 h2 {
   font-size: 50px;
@@ -44,112 +38,199 @@ h2 {
 }
 p {
   font-size: 16px;
+  line-height: 1.5;
+}
+h4 {
+  font-size: 18px;
 }
 
-/* ==========header=========== */
-header {
-  background-color: #f3e8de;
-}
-header .header-content {
+/* ====================header=================== */
+
+.header-content {
   padding: 0.5rem;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  /* position: sticky;
-  top: 0; */
-  margin-left: 1rem;
-  margin-right: 1rem;
+  position: relative;
+}
+.header-name {
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+}
+.header-name p {
+  font-size: 2rem;
+}
+.logo {
+  width: 13%;
+  height: auto;
 }
 
-/* mobile menu */
-.icon-menu {
+/* ===navbar=== */
+.icon-navbar {
   position: absolute;
-  top: 10px;
-  left: 5px;
-  width: 25px;
+  top: 50%;
+  left: 95%;
+  translate: -50% -50%;
+  font-size: 25px;
   color: #3f2214;
+  cursor: pointer;
 }
-.navbar {
-  display: none;
-}
-.overlay-menu {
+.overlay-navbar {
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.3);
   inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
   /* overlay hidden */
   opacity: 0;
   visibility: hidden;
 }
 /* overlay checked */
-.menu-checkbox:checked ~ .overlay-menu {
+.checkbox:checked ~ .overlay-navbar {
   opacity: 1;
   visibility: visible;
+  transition: 0.8s;
+}
+/* navbar content */
+.menu-drawer {
+  position: fixed;
+  background-color: #3f2214;
+  inset: 0 0 0 60%;
+  z-index: 2;
+  translate: 100%;
   transition: 0.5s;
 }
-
-.button-order a {
-  display: none;
-  background-color: #3f2214;
+.checkbox:checked ~ .menu-drawer {
+  translate: 0;
+}
+.navbar-content {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 1fr;
+}
+.icon-close-nav {
   color: #f3e8de;
-  padding: 5px 16px;
-  border-radius: 25px;
+  text-align: right;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 2;
 }
 
-/* ========main======== */
+.navbar {
+  padding-top: 50px;
+  padding-left: 20px;
+}
+.navbar li {
+  padding-bottom: 15px;
+}
+.navbar-link {
+  font-size: 20px;
+  display: block;
+  color: #f3e8de;
+}
+.navbar-link:hover {
+  color: #f8c52c;
+}
+.navbar-link.order-link {
+  color: #f8c52c;
+  font-weight: 400;
+}
+.navbar-link.order-link:hover {
+  font-size: 25px;
+}
 
 /* ======hero===== */
 .hero {
-  background-color: #3f2214;
-  color: #f3e8de;
+  color: #270f04;
   padding: 0 0 5rem 0;
+  position: relative;
+  background-color: rgba(29, 16, 3, 0.9);
+  height: 500px;
 }
-.hero .container {
+.hero::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  background-image: url(/assets/img/restaurant.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+.hero-box {
+  position: relative;
+  color: #f3e8de;
+  width: 80%px;
+  inset: 50% 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-box .container {
   text-align: center;
 }
+
 .hero-button {
   display: flex;
   justify-content: center;
   justify-content: space-around;
   padding: 10px;
 }
-.button-menu a {
+.hero-link {
   background-color: #f8c52c;
   color: #3f2214;
+  width: 160px;
+  height: 30px;
+  text-align: center;
   padding: 5px 36px;
-  border-radius: 25px;
-}
-.button-order-hero a {
-  background-color: #f8c52c;
-  color: #3f2214;
-  padding: 5px 16px;
   border-radius: 25px;
 }
 
 /* ===============About============ */
 main .about {
-  background-color: #f3e8de;
-  color: #3f2214;
+  background-color: #3f2214;
+  color: #f3e8de;
 }
 
+.info-about {
+  padding: 20px 0;
+}
 .media-about {
   display: flex;
   justify-content: center;
 }
-.img-inside {
+.img-about {
   width: 100%;
 }
 
 /* =============Menu============== */
 
 .menu {
-  background-color: #3f2214;
+  background-color: #f3e8de;
   padding: 0;
-  color: #f3e8de;
+  color: #3f2214;
 }
 
-.button-menu.action-menu {
-  margin: 3rem 0;
+.info-menu {
+  padding: 40px 0;
+}
+.info-menu h1 {
+  color: #3f2214;
+}
+.menu-link a {
+  background-color: #f8c52c;
+  color: #3f2214;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  padding: 5px 36px;
+  border-radius: 25px;
+}
+.menu-link {
+  padding: 20px 0;
 }
 .list-menu {
   display: flex;
@@ -166,18 +247,25 @@ main .about {
 .item-button {
   padding: 20px;
 }
-
+.item-button a {
+  color: #3f2214;
+}
 .item-button :hover {
   color: #f8c52c;
-  font-size: x-large;
+  font-size: 25px;
 }
 
 /* ===========footer=========== */
 .contact {
-  background-color: #f3e8de;
-  color: #3f2214;
+  background-color: #3f2214;
+  color: #f3e8de;
 }
-
+.phone-number {
+  color: #f3e8de;
+}
+.fa-solid.fa-phone {
+  padding-right: 10px;
+}
 h3 {
   font-size: 20px;
   font-weight: 500;
@@ -186,13 +274,10 @@ h3 {
 }
 
 ul a {
-  color: #3f2214;
+  color: #f3e8de;
 }
 
-.header-contact a {
-  color: #3f2214;
-}
-.fa-solid {
+.info-contact .fa-solid {
   padding: 10px 10px 0 0;
 }
 .form-group {
@@ -215,10 +300,60 @@ p {
 
 .copyright {
   text-align: center;
+  background-color: #f3e8de;
 }
 
-/* tạm ẩn */
-main,
-footer {
-  display: none;
+/* ===========================PAGE-MENU================= */
+/* hero */
+.header-hero {
+  color: #270f04;
+  padding: 0 0 5rem 0;
+  position: relative;
+  background-color: rgba(29, 16, 3, 0.9);
+  height: 200px;
+}
+.header-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/vietnamese_food.jpg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  opacity: 0.22;
+}
+.hero-content {
+  position: relative;
+  color: #f3e8de;
+  width: 80%px;
+  inset: 50% 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-content .container {
+  text-align: center;
+}
+
+/* main */
+.main-menu .container {
+  display: flex;
+  flex-direction: column;
+}
+.wp-block-heading h2 {
+  font-size: 24px;
+  padding: 10px;
+  background-color: #3f2214;
+  border-radius: 35px;
+  width: 120px;
+  text-align: center;
+  color: #f8c52c;
+}
+.wp-block-content h3 {
+  color: #3f2214;
+}
+.wp-block-content p {
+  color: #3f2214;
 }
