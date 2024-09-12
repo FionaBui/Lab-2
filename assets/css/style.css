@@ -25,20 +25,22 @@ a {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 40px;
   padding-bottom: 10px;
   line-height: 50px;
   font-style: italic;
   color: #f8c52c;
 }
 h2 {
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 600;
   padding-bottom: 15px;
+  color: #f3e8de;
 }
 p {
   font-size: 16px;
   line-height: 1.5;
+  color: #f3e8de;
 }
 h4 {
   font-size: 18px;
@@ -61,7 +63,7 @@ h4 {
   font-size: 2rem;
 }
 .logo {
-  width: 13%;
+  width: 10%;
   height: auto;
 }
 
@@ -116,11 +118,11 @@ h4 {
   z-index: 2;
 }
 
-.navbar {
+.navbar-list {
   padding-top: 50px;
   padding-left: 20px;
 }
-.navbar li {
+.navbar-list li {
   padding-bottom: 15px;
 }
 .navbar-link {
@@ -145,7 +147,6 @@ h4 {
   padding: 0 0 5rem 0;
   position: relative;
   background-color: rgba(29, 16, 3, 0.9);
-  height: 500px;
 }
 .hero::before {
   content: " ";
@@ -156,17 +157,17 @@ h4 {
   width: 100%;
   height: 100%;
   opacity: 0.2;
-  background-image: url(/assets/img/restaurant.jpg);
+  background-image: url(/assets/img/inside_restaurant.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50%;
+  background-position: 100%;
 }
 .hero-box {
   position: relative;
   color: #f3e8de;
-  width: 80%px;
   inset: 50% 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
+  width: 90%;
 }
 
 .hero-box .container {
@@ -182,11 +183,17 @@ h4 {
 .hero-link {
   background-color: #f8c52c;
   color: #3f2214;
-  width: 160px;
-  height: 30px;
+  width: 130px;
   text-align: center;
-  padding: 5px 36px;
+  padding: 5px 0;
   border-radius: 25px;
+}
+.hero-box h2 {
+  font-size: 50px;
+  color: #f8c52c;
+}
+.hero h1 {
+  color: #f3e8de;
 }
 
 /* ===============About============ */
@@ -211,13 +218,15 @@ main .about {
 .menu {
   background-color: #f3e8de;
   padding: 0;
-  color: #3f2214;
 }
 
 .info-menu {
   padding: 40px 0;
 }
 .info-menu h1 {
+  color: #3f2214;
+}
+.info-menu p {
   color: #3f2214;
 }
 .menu-link a {
@@ -300,7 +309,7 @@ p {
 
 .copyright {
   text-align: center;
-  background-color: #f3e8de;
+  background-color: #3f2214;
 }
 
 /* ===========================PAGE-MENU================= */
@@ -320,7 +329,7 @@ p {
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: url(../img/vietnamese_food.jpg);
+  background-image: url(../img/pho.jpg);
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
@@ -356,4 +365,65 @@ p {
 }
 .wp-block-content p {
   color: #3f2214;
+}
+
+@media (min-width: 360px) and (max-width: 979.98px) {
+  .nav-desktop {
+    display: none;
+  }
+}
+/*============================== Desktop============================ */
+@media (min-width: 980px) {
+  /* header */
+  .navbar {
+    display: none;
+  }
+  .header-name {
+    display: none;
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  #navbar-list_desktop {
+    display: flex;
+  }
+  .navbar-link {
+    padding: 10px 30px;
+    color: #3f2214;
+  }
+  .navbar-link.order-link {
+    background-color: #f8c52c;
+    color: #3f2214;
+    width: 120px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 25px;
+  }
+  /* main */
+  .about .container {
+    flex-direction: row;
+  }
+  .info-about {
+    padding-right: 30px;
+    margin: 30px;
+  }
+  .info-menu {
+    padding-right: 30px;
+    margin: 30px;
+  }
+  /* footer */
+  .body-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .form-contact {
+    width: 500px;
+  }
+  .header-contact {
+    text-align: center;
+    padding-bottom: 30px;
+  }
 }

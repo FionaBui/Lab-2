@@ -30,48 +30,61 @@
         <div class="header-content">
           <!-- logo -->
           <img class="logo" src="./assets/img/Logo.PNG" alt="Logo_restaurang" />
-
+          <!-- Nav mobile -->
           <!-- name -->
           <div class="header-name">
             <p>Cà Phê Vietnam</p>
           </div>
 
-          <!-- icon -->
-          <input
-            type="checkbox"
-            name="checkbox"
-            id="checkbox"
-            class="checkbox"
-            hidden
-          />
-          <label for="checkbox">
-            <div class="icon-navbar">
-              <i class="fa-solid fa-bars"></i>
-            </div>
-          </label>
+          <!-- navbar mobile -->
+          <div class="navbar">
+            <!-- icon -->
+            <input
+              type="checkbox"
+              name="checkbox"
+              id="checkbox"
+              class="checkbox"
+              hidden
+            />
+            <label for="checkbox">
+              <div class="icon-navbar">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+            </label>
 
-          <!-- overlay -->
-          <label for="checkbox" class="overlay-navbar"></label>
+            <!-- overlay -->
+            <label for="checkbox" class="overlay-navbar"></label>
 
-          <!-- navbar -->
-          <div class="menu-drawer">
-            <div class="navbar-content">
-              <!-- navbar content -->
-              <ul class="navbar">
-                <li><a href="/index.html" class="navbar-link">Hem</a></li>
-                <li><a href="./menu.html" class="navbar-link">Meny</a></li>
-                <li><a href="/#footer" class="navbar-link">Hitta oss</a></li>
-                <li>
-                  <a href="#!" class="navbar-link order-link">Beställ här</a>
-                </li>
-              </ul>
-              <!-- icon close -->
-              <label for="checkbox">
-                <div class="icon-close-nav">
-                  <i class="fa-regular fa-circle-xmark"></i>
-                </div>
-              </label>
+            <!-- navbar -->
+            <div class="menu-drawer">
+              <div class="navbar-content">
+                <!-- navbar content -->
+                <ul class="navbar-list" id="navbar-list_mobile">
+                  <li><a href="/index.html" class="navbar-link">Hem</a></li>
+                  <li><a href="./menu.html" class="navbar-link">Meny</a></li>
+                  <li><a href="/#footer" class="navbar-link">Hitta oss</a></li>
+                  <li>
+                    <a href="/" class="navbar-link order-link">Beställ här</a>
+                  </li>
+                </ul>
+                <!-- icon close -->
+                <label for="checkbox">
+                  <div class="icon-close-nav">
+                    <i class="fa-regular fa-circle-xmark"></i>
+                  </div>
+                </label>
+              </div>
             </div>
+          </div>
+          <div class="nav-desktop">
+            <ul id="navbar-list_desktop"></ul>
+            <!-- använder js -->
+            <script>
+              const navMobile = document.querySelector("#navbar-list_mobile");
+              const navDesktop = document.querySelector("#navbar-list_desktop");
+              // copy
+              navDesktop.innerHTML = navMobile.innerHTML;
+            </script>
           </div>
         </div>
 
@@ -90,8 +103,8 @@
             </div>
 
             <div class="hero-button">
-              <a href="#!" class="hero-link">Meny</a>
-              <a href="#!" class="hero-link">Beställ här</a>
+              <a href="/menu.html" class="hero-link">Meny</a>
+              <a href="/" class="hero-link">Beställ här</a>
             </div>
           </div>
         </section>
@@ -121,8 +134,8 @@
           <div class="media-about">
             <img
               class="img-about"
-              src="./assets/img/bowl.jpg"
-              alt="Vietnamese_Bowl "
+              src="./assets/img/Aburi_bowl.jpg"
+              alt="bowl"
             />
           </div>
         </div>
@@ -142,7 +155,7 @@
               att tillfredsställa dina smaklökar på Cà Phê. Besök oss idag!
             </p>
             <div class="menu-link">
-              <a href="">Vår meny</a>
+              <a href="/">Vår meny</a>
             </div>
           </div>
 
@@ -150,11 +163,11 @@
           <div class="list-menu">
             <div class="item-container">
               <img src="./assets/img/pho.jpg" alt="bowls" class="item-img" />
-              <div class="item-button"><a href="#!">Bowls</a></div>
+              <div class="item-button"><a href="./menu.html">Bowls</a></div>
             </div>
             <div class="item-container">
               <img src="./assets/img/sushi.jpg" alt="sushi" class="item-img" />
-              <div class="item-button"><a href="#!">Sushi</a></div>
+              <div class="item-button"><a href="./menu.html">Sushi</a></div>
             </div>
           </div>
         </div>
