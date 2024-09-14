@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- font awesome -->
+    <meta
+      name="description"
+      content="Cà Phê Vietname erbjuder läckra måltider och unika smaker. Besök oss idag!"
+    />
+    <!-- font-awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
-    <!-- link to reset.css -->
-    <link rel="stylesheet" href="./assets/css/reset.css" />
     <!-- embed font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,11 +19,90 @@
       href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap"
       rel="stylesheet"
     />
-
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/assets/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/assets/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/assets/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/assets/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/assets/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/assets/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/assets/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/assets/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/assets/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/assets/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="/assets/favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- link to reset.css -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
     <!-- link to style.css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
-
-    <title>Laboration 2</title>
+    <!-- link to responsive.css -->
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <title>Cà Phê - Asian fusion restaurant</title>
   </head>
   <body>
     <!-- =====Header===== -->
@@ -29,7 +110,7 @@
       <div class="header-box">
         <div class="header-content">
           <!-- logo -->
-          <img class="logo" src="./assets/img/Logo.PNG" alt="Logo_restaurang" />
+          <img class="logo" src="assets/img/Logo.png" alt="Logo_restaurant" />
           <!-- Nav mobile -->
           <!-- name -->
           <div class="header-name">
@@ -46,11 +127,12 @@
               class="checkbox"
               hidden
             />
-            <label for="checkbox">
-              <div class="icon-navbar">
+
+            <div class="icon-navbar">
+              <label for="checkbox">
                 <i class="fa-solid fa-bars"></i>
-              </div>
-            </label>
+              </label>
+            </div>
 
             <!-- overlay -->
             <label for="checkbox" class="overlay-navbar"></label>
@@ -59,20 +141,23 @@
             <div class="menu-drawer">
               <div class="navbar-content">
                 <!-- navbar content -->
-                <ul class="navbar-list" id="navbar-list_mobile">
-                  <li><a href="/index.html" class="navbar-link">Hem</a></li>
-                  <li><a href="./menu.html" class="navbar-link">Meny</a></li>
-                  <li><a href="/#footer" class="navbar-link">Hitta oss</a></li>
+                <ul id="navbar-list_mobile">
+                  <li><a id="btn-home" href="/index.html">Hem</a></li>
+                  <li><a href="./menu.html">Meny</a></li>
                   <li>
-                    <a href="/" class="navbar-link order-link">Beställ här</a>
+                    <a href="/#footer">Hitta oss</a>
+                  </li>
+                  <li>
+                    <a href="/" class="order-link">Beställ här</a>
                   </li>
                 </ul>
                 <!-- icon close -->
-                <label for="checkbox">
-                  <div class="icon-close-nav">
+
+                <div class="icon-close-nav">
+                  <label for="checkbox">
                     <i class="fa-regular fa-circle-xmark"></i>
-                  </div>
-                </label>
+                  </label>
+                </div>
               </div>
             </div>
           </div>
@@ -132,11 +217,7 @@
           </div>
           <!-- about right -->
           <div class="media-about">
-            <img
-              class="img-about"
-              src="./assets/img/Aburi_bowl.jpg"
-              alt="bowl"
-            />
+            <img class="img-about" src="assets/img/Aburi_bowl.jpg" alt="bowl" />
           </div>
         </div>
       </section>
@@ -162,11 +243,11 @@
           <!-- menu content right -->
           <div class="list-menu">
             <div class="item-container">
-              <img src="./assets/img/pho.jpg" alt="bowls" class="item-img" />
+              <img src="assets/img/pho.jpg" alt="bowls" class="item-img" />
               <div class="item-button"><a href="./menu.html">Bowls</a></div>
             </div>
             <div class="item-container">
-              <img src="./assets/img/sushi.jpg" alt="sushi" class="item-img" />
+              <img src="assets/img/sushi.jpg" alt="sushi" class="item-img" />
               <div class="item-button"><a href="./menu.html">Sushi</a></div>
             </div>
           </div>
@@ -184,7 +265,7 @@
               explosion av smaker som kommer att ta dina smaklökar på en
               spännande resa!
             </p>
-            <a class="phone-number" href="tel:+46 737 418 580"
+            <a class="phone-number" href="tel:+46737418580"
               ><i class="fa-solid fa-phone"></i>0737418580</a
             >
           </div>
